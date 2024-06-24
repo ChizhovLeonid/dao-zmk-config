@@ -58,16 +58,6 @@
                 delay-ms = <0>;
                 trigger-period-ms = <8>;      // 16
             };
-            fmsc: fast_mouse_scroll {
-                compatible = "zmk,behavior-input-two-axis";
-                #binding-cells = <1>;
-                x-input-code = <INPUT_REL_HWHEEL>;
-                y-input-code = <INPUT_REL_WHEEL>;
-                acceleration-exponent = <1>;  // 0
-                time-to-max-speed-ms = <40>;  // 300
-                delay-ms = <0>;
-                trigger-period-ms = <8>;      // 16
-            };
             //  deceleration
             smmv: slow_mouse_move {
                 compatible = "zmk,behavior-input-two-axis";
@@ -86,7 +76,7 @@
         fmmv_input_listener: fmmv_input_listener {
             compatible = "zmk,input-listener";
             device = <&fmmv>;
-            scale-multiplier = <2>;
+            scale-multiplier = <3>;
             scale-divisor = <1>;
         };
         //  deceleration
