@@ -138,7 +138,7 @@
         fast_mouse_layer {
             bindings = <
         &none   &none   &none               &fmmv MOVE_UP   &none               &none       &none   &none   &none   &none   &none    &none
-        &none   &none   &fmmv MOVE_LEFT     &fmmv MOVE_DOWN &fmmv MOVE_RIGHT    &none       &none   &none   &none   &none   &none    &none
+        &none   &none   &fmmv MOVE_LEFT     &fmmv MOVE_DOWN &fmmv MOVE_RIGHT    &none       &none   &trans  &trans  &trans  &none    &none
         &none   &none   &none               &none           &none               &none       &none   &none   &none   &none   &none    &none
                                             &none           &none               &none       &none   &none   &none
             >;
@@ -147,7 +147,7 @@
         slow_mouse_layer {
             bindings = <
         &none   &none   &none               &smmv MOVE_UP   &none               &none       &none   &none   &none   &none   &none    &none
-        &none   &none   &smmv MOVE_LEFT     &smmv MOVE_DOWN &smmv MOVE_RIGHT    &none       &none   &none   &none   &none   &none    &none
+        &none   &none   &smmv MOVE_LEFT     &smmv MOVE_DOWN &smmv MOVE_RIGHT    &none       &none   &trans  &trans  &trans  &none    &none
         &none   &none   &none               &none           &none               &none       &none   &none   &none   &none   &none    &none
                                             &none           &none               &none       &none   &none   &none
             >;
